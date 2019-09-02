@@ -1,0 +1,5 @@
+THREAD COMPILATION: tokenOut_from_test3.txt  2019/5/31 19:7:21
+START:
+
+-|thread
+Error : lexical error in 1 line

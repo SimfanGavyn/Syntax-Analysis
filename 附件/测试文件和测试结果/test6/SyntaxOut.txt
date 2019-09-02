@@ -1,0 +1,68 @@
+THREAD COMPILATION: tokenOut_from_test6.txt  2019/5/31 20:9:16
+START:
+
+-|thread
+-|identifier, name = Thread1
+-|features
+--|identifier, name = AP_Position_Input
+--|:
+---|in
+---|event
+---|data
+---|port
+----|identifier, name = Nav_Types
+----|::
+----|identifier, name = Position_GPS
+---|;
+-|flows
+--|identifier, name = flow1
+--|:
+--|flow
+---|path
+---|identifier, name = signal
+---|->
+---|identifier, name = result1
+---|;
+-|properties
+--|identifier, name = dispatch_protocol
+---|=>
+--|access
+--|decimal, value = 50.0
+-|;
+-|end
+-|identifier, name = Thread1
+-|;
+-|thread
+-|identifier, name = Thread_2
+-|features
+--|identifier, name = AP_Position_Input
+--|:
+---|in
+---|data
+---|port
+----|identifier, name = Nav_Types1
+----|::
+----|identifier, name = Nav_Types2
+----|::
+----|identifier, name = Position_GPS
+---|;
+-|flows
+--|identifier, name = flow1
+--|:
+--|flow
+---|source
+---|identifier, name = signal
+---|{
+----|identifier, name = result1
+----|::
+----|identifier, name = result2
+-----|+=>
+----|constant
+----|access
+----|decimal, value = 50.0
+---|}
+---|;
+-|properties
+--|none
+-|;
+Error: tokenOut file ends at a improper position in 16 line

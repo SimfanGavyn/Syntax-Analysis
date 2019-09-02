@@ -1,0 +1,323 @@
+THREAD COMPILATION: test5.txt  2019/5/29 11:50:54
+EOF
+
+Line 1:  |thread Thread1
+   Sub 1:  |Reserved Word = thread
+   Sub 1:  |Identifier, Name = Thread1
+
+Line 2:  |features
+   Sub 2:  |Reserved Word = features
+
+Line 3:  |	AP_Position_Input : in event data port Nav_Types::Position_GPS;
+   Sub 3:  |Identifier, Name = AP_Position_Input
+   Sub 3:  |Signal = :
+   Sub 3:  |Reserved Word = in
+   Sub 3:  |Reserved Word = event
+   Sub 3:  |Reserved Word = data
+   Sub 3:  |Reserved Word = port
+   Sub 3:  |Identifier, Name = Nav_Types
+   Sub 3:  |Signal = ::
+   Sub 3:  |Identifier, Name = Position_GPS
+   Sub 3:  |Signal = ;
+
+Line 4:  |flows
+   Sub 4:  |Reserved Word = flows
+
+Line 5:  |        flow1: flow path signal -> result1;
+   Sub 5:  |Identifier, Name = flow1
+   Sub 5:  |Signal = :
+   Sub 5:  |Reserved Word = flow
+   Sub 5:  |Reserved Word = path
+   Sub 5:  |Identifier, Name = signal
+   Sub 5:  |Signal = ->
+   Sub 5:  |Identifier, Name = result1
+   Sub 5:  |Signal = ;
+
+Line 6:  |properties
+   Sub 6:  |Reserved Word = properties
+
+Line 7:  |	dispatch_protocol => access 50.0;
+   Sub 7:  |Identifier, Name = dispatch_protocol
+   Sub 7:  |Signal = =>
+   Sub 7:  |Reserved Word = access
+   Sub 7:  |Decimal, Value = 50.0
+   Sub 7:  |Signal = ;
+
+Line 8:  |end Thread1;
+   Sub 8:  |Reserved Word = end
+   Sub 8:  |Identifier, Name = Thread1
+   Sub 8:  |Signal = ;
+
+Line 9:  |
+
+Line 10:  |thread Thread_2
+   Sub 10:  |Reserved Word = thread
+   Sub 10:  |Identifier, Name = Thread_2
+
+Line 11:  |features
+   Sub 11:  |Reserved Word = features
+
+Line 12:  |	AP_Position_Input : in data port Nav_Types1::Nav_Types2::Position_GPS;
+   Sub 12:  |Identifier, Name = AP_Position_Input
+   Sub 12:  |Signal = :
+   Sub 12:  |Reserved Word = in
+   Sub 12:  |Reserved Word = data
+   Sub 12:  |Reserved Word = port
+   Sub 12:  |Identifier, Name = Nav_Types1
+   Sub 12:  |Signal = ::
+   Sub 12:  |Identifier, Name = Nav_Types2
+   Sub 12:  |Signal = ::
+   Sub 12:  |Identifier, Name = Position_GPS
+   Sub 12:  |Signal = ;
+
+Line 13:  |flows
+   Sub 13:  |Reserved Word = flows
+
+Line 14:  |        flow1: flow source signal {result1::result2 +=> };
+   Sub 14:  |Identifier, Name = flow1
+   Sub 14:  |Signal = :
+   Sub 14:  |Reserved Word = flow
+   Sub 14:  |Reserved Word = source
+   Sub 14:  |Identifier, Name = signal
+   Sub 14:  |Signal = {
+   Sub 14:  |Identifier, Name = result1
+   Sub 14:  |Signal = ::
+   Sub 14:  |Identifier, Name = result2
+   Sub 14:  |Signal = +=>
+   Sub 14:  |Signal = }
+   Sub 14:  |Signal = ;
+
+Line 15:  |properties
+   Sub 15:  |Reserved Word = properties
+
+Line 16:  |	none;
+   Sub 16:  |Reserved Word = none
+   Sub 16:  |Signal = ;
+
+Line 17:  |end Thread_2;
+   Sub 17:  |Reserved Word = end
+   Sub 17:  |Identifier, Name = Thread_2
+   Sub 17:  |Signal = ;
+
+Line 18:  |
+
+Line 19:  |thread Thread3d
+   Sub 19:  |Reserved Word = thread
+   Sub 19:  |Identifier, Name = Thread3d
+
+Line 20:  |features
+   Sub 20:  |Reserved Word = features
+
+Line 21:  |	AP_Position_Input : out data port Nav_Types1::Nav_Types2::Position_GPS {result1::result2 +=> constant access 50.0};
+   Sub 21:  |Identifier, Name = AP_Position_Input
+   Sub 21:  |Signal = :
+   Sub 21:  |Reserved Word = out
+   Sub 21:  |Reserved Word = data
+   Sub 21:  |Reserved Word = port
+   Sub 21:  |Identifier, Name = Nav_Types1
+   Sub 21:  |Signal = ::
+   Sub 21:  |Identifier, Name = Nav_Types2
+   Sub 21:  |Signal = ::
+   Sub 21:  |Identifier, Name = Position_GPS
+   Sub 21:  |Signal = {
+   Sub 21:  |Identifier, Name = result1
+   Sub 21:  |Signal = ::
+   Sub 21:  |Identifier, Name = result2
+   Sub 21:  |Signal = +=>
+   Sub 21:  |Reserved Word = constant
+   Sub 21:  |Reserved Word = access
+   Sub 21:  |Decimal, Value = 50.0
+   Sub 21:  |Signal = }
+   Sub 21:  |Signal = ;
+
+Line 22:  |flows
+   Sub 22:  |Reserved Word = flows
+
+Line 23:  |        flow1: flow sink signal {result1::result2 +=> constant access 50.0};
+   Sub 23:  |Identifier, Name = flow1
+   Sub 23:  |Signal = :
+   Sub 23:  |Reserved Word = flow
+   Sub 23:  |Reserved Word = sink
+   Sub 23:  |Identifier, Name = signal
+   Sub 23:  |Signal = {
+   Sub 23:  |Identifier, Name = result1
+   Sub 23:  |Signal = ::
+   Sub 23:  |Identifier, Name = result2
+   Sub 23:  |Signal = +=>
+   Sub 23:  |Reserved Word = constant
+   Sub 23:  |Reserved Word = access
+   Sub 23:  |Decimal, Value = 50.0
+   Sub 23:  |Signal = }
+   Sub 23:  |Signal = ;
+
+Line 24:  |properties
+   Sub 24:  |Reserved Word = properties
+
+Line 25:  |	size => constant access +50.0;
+   Sub 25:  |Identifier, Name = size
+   Sub 25:  |Signal = =>
+   Sub 25:  |Reserved Word = constant
+   Sub 25:  |Reserved Word = access
+   Sub 25:  |Decimal, Value = +50.0
+   Sub 25:  |Signal = ;
+
+Line 26:  |end Thread3d;
+   Sub 26:  |Reserved Word = end
+   Sub 26:  |Identifier, Name = Thread3d
+   Sub 26:  |Signal = ;
+
+Line 27:  |
+
+Line 28:  |thread Thread4
+   Sub 28:  |Reserved Word = thread
+   Sub 28:  |Identifier, Name = Thread4
+
+Line 29:  |features
+   Sub 29:  |Reserved Word = features
+
+Line 30:  |	AP_Position_Input : in out parameter Nav_Types1::Nav_Types2::Position_GPS {result1::result2 => constant access 50.0};
+   Sub 30:  |Identifier, Name = AP_Position_Input
+   Sub 30:  |Signal = :
+   Sub 30:  |Reserved Word = in
+   Sub 30:  |Reserved Word = out
+   Sub 30:  |Reserved Word = parameter
+   Sub 30:  |Identifier, Name = Nav_Types1
+   Sub 30:  |Signal = ::
+   Sub 30:  |Identifier, Name = Nav_Types2
+   Sub 30:  |Signal = ::
+   Sub 30:  |Identifier, Name = Position_GPS
+   Sub 30:  |Signal = {
+   Sub 30:  |Identifier, Name = result1
+   Sub 30:  |Signal = ::
+   Sub 30:  |Identifier, Name = result2
+   Sub 30:  |Signal = =>
+   Sub 30:  |Reserved Word = constant
+   Sub 30:  |Reserved Word = access
+   Sub 30:  |Decimal, Value = 50.0
+   Sub 30:  |Signal = }
+   Sub 30:  |Signal = ;
+
+Line 31:  |flows
+   Sub 31:  |Reserved Word = flows
+
+Line 32:  |        flow1: flow sink signal {result1::result2 +=> constant access 50.0};
+   Sub 32:  |Identifier, Name = flow1
+   Sub 32:  |Signal = :
+   Sub 32:  |Reserved Word = flow
+   Sub 32:  |Reserved Word = sink
+   Sub 32:  |Identifier, Name = signal
+   Sub 32:  |Signal = {
+   Sub 32:  |Identifier, Name = result1
+   Sub 32:  |Signal = ::
+   Sub 32:  |Identifier, Name = result2
+   Sub 32:  |Signal = +=>
+   Sub 32:  |Reserved Word = constant
+   Sub 32:  |Reserved Word = access
+   Sub 32:  |Decimal, Value = 50.0
+   Sub 32:  |Signal = }
+   Sub 32:  |Signal = ;
+
+Line 33:  |properties
+   Sub 33:  |Reserved Word = properties
+
+Line 34:  |	size => constant access -50.0;
+   Sub 34:  |Identifier, Name = size
+   Sub 34:  |Signal = =>
+   Sub 34:  |Reserved Word = constant
+   Sub 34:  |Reserved Word = access
+   Sub 34:  |Decimal, Value = -50.0
+   Sub 34:  |Signal = ;
+
+Line 35:  |end Thread4;
+   Sub 35:  |Reserved Word = end
+   Sub 35:  |Identifier, Name = Thread4
+   Sub 35:  |Signal = ;
+
+Line 36:  |
+
+Line 37:  |thread Thread5
+   Sub 37:  |Reserved Word = thread
+   Sub 37:  |Identifier, Name = Thread5
+
+Line 38:  |features
+   Sub 38:  |Reserved Word = features
+
+Line 39:  |	AP_Position_Input : in out event port;
+   Sub 39:  |Identifier, Name = AP_Position_Input
+   Sub 39:  |Signal = :
+   Sub 39:  |Reserved Word = in
+   Sub 39:  |Reserved Word = out
+   Sub 39:  |Reserved Word = event
+   Sub 39:  |Reserved Word = port
+   Sub 39:  |Signal = ;
+
+Line 40:  |flows
+   Sub 40:  |Reserved Word = flows
+
+Line 41:  |        flow1: flow sink signal {result1::result2 +=> constant access 50.0};
+   Sub 41:  |Identifier, Name = flow1
+   Sub 41:  |Signal = :
+   Sub 41:  |Reserved Word = flow
+   Sub 41:  |Reserved Word = sink
+   Sub 41:  |Identifier, Name = signal
+   Sub 41:  |Signal = {
+   Sub 41:  |Identifier, Name = result1
+   Sub 41:  |Signal = ::
+   Sub 41:  |Identifier, Name = result2
+   Sub 41:  |Signal = +=>
+   Sub 41:  |Reserved Word = constant
+   Sub 41:  |Reserved Word = access
+   Sub 41:  |Decimal, Value = 50.0
+   Sub 41:  |Signal = }
+   Sub 41:  |Signal = ;
+
+Line 42:  |properties
+   Sub 42:  |Reserved Word = properties
+
+Line 43:  |	size => constant access 50.0;
+   Sub 43:  |Identifier, Name = size
+   Sub 43:  |Signal = =>
+   Sub 43:  |Reserved Word = constant
+   Sub 43:  |Reserved Word = access
+   Sub 43:  |Decimal, Value = 50.0
+   Sub 43:  |Signal = ;
+
+Line 44:  |end Thread5;
+   Sub 44:  |Reserved Word = end
+   Sub 44:  |Identifier, Name = Thread5
+   Sub 44:  |Signal = ;
+
+Line 45:  |
+
+Line 46:  |thread Thread6
+   Sub 46:  |Reserved Word = thread
+   Sub 46:  |Identifier, Name = Thread6
+
+Line 47:  |features
+   Sub 47:  |Reserved Word = features
+
+Line 48:  |	none;
+   Sub 48:  |Reserved Word = none
+   Sub 48:  |Signal = ;
+
+Line 49:  |flows
+   Sub 49:  |Reserved Word = flows
+
+Line 50:  |        none;
+   Sub 50:  |Reserved Word = none
+   Sub 50:  |Signal = ;
+
+Line 51:  |properties
+   Sub 51:  |Reserved Word = properties
+
+Line 52:  |	none;
+   Sub 52:  |Reserved Word = none
+   Sub 52:  |Signal = ;
+
+Line 53:  |end Thread6;
+   Sub 53:  |Reserved Word = end
+   Sub 53:  |Identifier, Name = Thread6
+   Sub 53:  |Signal = ;
+
+EOF
+DETECTED ERROR: 0 error.

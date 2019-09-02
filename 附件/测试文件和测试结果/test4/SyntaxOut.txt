@@ -1,0 +1,34 @@
+THREAD COMPILATION: tokenOut_from_test4.txt  2019/5/31 19:7:30
+START:
+
+-|thread
+-|identifier, name = Thread1
+-|features
+--|identifier, name = AP_Position_Input
+--|:
+---|in
+---|event
+---|data
+---|port
+----|identifier, name = Nav_Types
+----|::
+----|identifier, name = Position_GPS
+---|;
+-|flows
+--|identifier, name = flow1
+--|:
+--|flow
+---|path
+---|identifier, name = signal
+---|->
+---|identifier, name = result1
+---|;
+-|properties
+--|identifier, name = dispatch_protocol
+---|=>
+--|access
+--|decimal, value = 50.0
+-|;
+-|end
+Error: syntax error in 8 line
+Unexpected token: identifier, name = Thread1aaa
